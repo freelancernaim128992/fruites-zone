@@ -8,12 +8,55 @@
     <!-- Tailwind and Daisy UI Link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font  Awesome Icon  -->
+    <script src="https://kit.fontawesome.com/977c6a28c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Start Header Area  -->
     <header>
-
+        <!-- Start Navbar  -->
+        <nav class="navbar lg:text-white lg:bg-rose-500 justify-between container mx-auto mt-5 rounded-full">
+            <div class="navbar-start justify-end lg:justify-start">
+                <div class="dropdown block lg:hidden dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruites</a></li>
+                        <li class="flex-row">
+                            <input type="text" placeholder="Search"
+                                class="input border-s-2 border-t-2 border-b-2 border-gray-300 w-24 md:w-auto rounded-s-full p-5 text-black" />
+                            <i
+                                class="fa-solid fa-magnifying-glass me-3 border-e-2 border-t-2 border-b-2 border-gray-300 text-black p-4 rounded-e-full"></i>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="menu menu-horizontal px-1 hidden lg:inline-flex">
+                    <li><a class="hover:bg-rose-500 hover:text-white">Home</a></li>
+                    <li><a class="hover:bg-rose-500 hover:text-white">About Us</a></li>
+                    <li><a class="hover:bg-rose-500 hover:text-white">Shop</a></li>
+                    <li><a class="hover:bg-rose-500 hover:text-white">All Fruites</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center -order-1 lg:order-none">
+                <img src="./images/logo.png" alt="">
+                <a class="btn lg:hover:bg-rose-500 btn-ghost normal-case text-2xl">Fruites Zone</a>
+            </div>
+            <div class="navbar-end hidden lg:inline-flex">
+                <input type="text" placeholder="Search" class="input w-24 md:w-auto rounded-s-full p-5 text-black" />
+                <i class="fa-solid fa-magnifying-glass me-3 bg-white text-black p-4 rounded-e-full"></i>
+            </div>
+        </nav>
+        <!-- End Navbar  -->
     </header>
     <!-- End Header Area  -->
 </body>
